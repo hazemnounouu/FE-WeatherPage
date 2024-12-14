@@ -37,7 +37,7 @@ findLocation.addEventListener("keyup", () => {
 // FUNCTIONSSSSSSSSSSSS
 async function getData(location) {
     try {
-        let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=cb8910f52d914b2e91d233127241012&q=${location}&days=3&aqi=no&alerts=no`);
+        let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=cb8910f52d914b2e91d233127241012&q=${location}&days=3&aqi=no&alerts=no`);
         if (response.ok) {
         let data = await response.json();
         displayWeather(data);
